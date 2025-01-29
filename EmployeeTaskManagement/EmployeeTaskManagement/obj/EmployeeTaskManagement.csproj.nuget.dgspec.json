@@ -1,0 +1,389 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\EmployeeTaskManagement\\EmployeeTaskManagement.csproj": {}
+  },
+  "projects": {
+    "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\EmployeeTaskManagement.Core\\EmployeeTaskManagement.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\EmployeeTaskManagement.Core\\EmployeeTaskManagement.Core.csproj",
+        "projectName": "EmployeeTaskManagement.Core",
+        "projectPath": "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\EmployeeTaskManagement.Core\\EmployeeTaskManagement.Core.csproj",
+        "packagesPath": "C:\\Users\\ayush\\.nuget\\packages\\",
+        "outputPath": "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\EmployeeTaskManagement.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ayush\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\EmployeeTaskManagement.Infrastructure\\EmployeeTaskManagement.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\EmployeeTaskManagement.Infrastructure\\EmployeeTaskManagement.Infrastructure.csproj",
+        "projectName": "EmployeeTaskManagement.Infrastructure",
+        "projectPath": "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\EmployeeTaskManagement.Infrastructure\\EmployeeTaskManagement.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ayush\\.nuget\\packages\\",
+        "outputPath": "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\EmployeeTaskManagement.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ayush\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\EmployeeTaskManagement\\EmployeeTaskManagement.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\EmployeeTaskManagement\\EmployeeTaskManagement.csproj",
+        "projectName": "EmployeeTaskManagement",
+        "projectPath": "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\EmployeeTaskManagement\\EmployeeTaskManagement.csproj",
+        "packagesPath": "C:\\Users\\ayush\\.nuget\\packages\\",
+        "outputPath": "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\EmployeeTaskManagement\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ayush\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\EmployeeTaskManagement.Core\\EmployeeTaskManagement.Core.csproj": {
+                "projectPath": "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\EmployeeTaskManagement.Core\\EmployeeTaskManagement.Core.csproj"
+              },
+              "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\EmployeeTaskManagement.Infrastructure\\EmployeeTaskManagement.Infrastructure.csproj": {
+                "projectPath": "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\EmployeeTaskManagement.Infrastructure\\EmployeeTaskManagement.Infrastructure.csproj"
+              },
+              "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\TaskManagement.Core\\TaskManagement.Core.csproj": {
+                "projectPath": "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\TaskManagement.Core\\TaskManagement.Core.csproj"
+              },
+              "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\TaskManagement.Infrastructure\\TaskManagement.Infrastructure.csproj": {
+                "projectPath": "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\TaskManagement.Infrastructure\\TaskManagement.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.12, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\TaskManagement.Core\\TaskManagement.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\TaskManagement.Core\\TaskManagement.Core.csproj",
+        "projectName": "TaskManagement.Core",
+        "projectPath": "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\TaskManagement.Core\\TaskManagement.Core.csproj",
+        "packagesPath": "C:\\Users\\ayush\\.nuget\\packages\\",
+        "outputPath": "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\TaskManagement.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ayush\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\TaskManagement.Infrastructure\\TaskManagement.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\TaskManagement.Infrastructure\\TaskManagement.Infrastructure.csproj",
+        "projectName": "TaskManagement.Infrastructure",
+        "projectPath": "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\TaskManagement.Infrastructure\\TaskManagement.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ayush\\.nuget\\packages\\",
+        "outputPath": "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\TaskManagement.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ayush\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\EmployeeTaskManagement.Core\\EmployeeTaskManagement.Core.csproj": {
+                "projectPath": "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\EmployeeTaskManagement.Core\\EmployeeTaskManagement.Core.csproj"
+              },
+              "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\TaskManagement.Core\\TaskManagement.Core.csproj": {
+                "projectPath": "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\TaskManagement.Core\\TaskManagement.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "System.Linq.Dynamic.Core": {
+              "target": "Package",
+              "version": "[1.6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
