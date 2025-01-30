@@ -9,4 +9,5 @@ global using Microsoft.AspNetCore.Authentication.JwtBearer;
 global using Microsoft.IdentityModel.Tokens;
 global using EmployeeTaskManagement;
 global using System.Text;
+global using TaskManagement.Core.Models;
 

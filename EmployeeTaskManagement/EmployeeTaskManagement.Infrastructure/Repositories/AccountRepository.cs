@@ -38,6 +38,10 @@
                 await _dataContext.SaveChangesAsync();
             }
         }
-    }
 
+        public async Task<User?> GetUserByEmailAsync(string email) 
+        { 
+            return await _dataContext.User.Where(x => x.Email.Equals(email)).SingleOrDefaultAsync();
+        }
+    }
 }

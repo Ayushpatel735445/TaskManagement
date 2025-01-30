@@ -1,6 +1,4 @@
-﻿
-
-namespace EmployeeTaskManagement.Infrastructure.Repositories
+﻿namespace EmployeeTaskManagement.Infrastructure.Repositories
 {
     public class TaskRepository : ITaskRepository
     {

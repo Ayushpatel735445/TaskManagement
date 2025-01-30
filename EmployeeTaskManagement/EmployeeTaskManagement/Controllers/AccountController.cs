@@ -1,5 +1,4 @@
 
-
 namespace EmployeeTaskManagement.Controllers
 {
     [ApiController]
@@ -16,5 +15,13 @@ namespace EmployeeTaskManagement.Controllers
             return Ok();
         }
 
+        [HttpPost("login")]
+        [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(IEnumerable<string>), StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> LoginAsync([FromBody] LoginModel model)
+        {
+            await _accountManager.LoginAsync(model);
+            return Ok();
+        }
     }
 }

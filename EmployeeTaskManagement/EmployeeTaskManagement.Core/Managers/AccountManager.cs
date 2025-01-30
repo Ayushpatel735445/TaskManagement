@@ -1,6 +1,4 @@
-﻿using EmployeeTaskManagement.Core.Adstractions.IRepositories;
-
-namespace EmployeeTaskManagement.Core.Managers
+﻿namespace EmployeeTaskManagement.Core.Managers
 {
     public class AccountManager : IAccountManager
     {
@@ -18,7 +16,11 @@ namespace EmployeeTaskManagement.Core.Managers
             await _accountRepository.InitializeAsync();
         }
 
+        public async Task LoginAsync(LoginModel model)
+        {
+            var user = await _accountRepository.GetUserByEmailAsync(model.Email) ?? throw new Exception("Email does not exist!");
 
-
+            if (!user.Password.Equals(model.Password))  throw new Exception("Incorrect password!");
+        }
     }
 }
