@@ -1,23 +1,19 @@
-﻿
-
-namespace TaskManagement.Infrastructure.EntityConfigs
+﻿namespace TaskManagement.Infrastructure.EntityConfigs
 {
-
     internal class TicketConfig : IEntityTypeConfiguration<Ticket>
     {
         public void Configure(EntityTypeBuilder<Ticket> builder)
         {
-            // Set the primary key
+            
             builder.HasKey(x => x.Id);
 
-            // Configure properties
             builder.Property(x => x.Title)
                 .IsRequired()
-                .HasMaxLength(100); // Limit Title to 100 characters
+                .HasMaxLength(100); 
 
             builder.Property(x => x.Description)
                 .IsRequired()
-                .HasMaxLength(500); // Limit Description to 500 characters
+                .HasMaxLength(500); 
 
             builder.Property(x => x.Status)
                 .IsRequired();
@@ -32,14 +28,12 @@ namespace TaskManagement.Infrastructure.EntityConfigs
                 .IsRequired();
 
             builder.Property(x => x.AssignedToDate)
-                .IsRequired(false); // Nullable
+                .IsRequired(false); 
 
-            
             builder.HasOne(x => x.User)
                 .WithMany(u => u.Tickets) 
                 .HasForeignKey(x => x.UserId)
                 .OnDelete(DeleteBehavior.Cascade);
-
 
         }
     }

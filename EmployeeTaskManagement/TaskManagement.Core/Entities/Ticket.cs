@@ -1,6 +1,4 @@
-﻿
-namespace TaskManagement.Core.Entities
-
+﻿namespace TaskManagement.Core.Entities
 {
     public class Ticket
     {

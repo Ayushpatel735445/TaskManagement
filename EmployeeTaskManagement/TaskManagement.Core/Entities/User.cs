@@ -1,5 +1,4 @@
-﻿
-namespace TaskManagement.Core.Entities
+﻿namespace TaskManagement.Core.Entities
 {
     public class User
     {
@@ -10,6 +9,6 @@ namespace TaskManagement.Core.Entities
         public string Password { get; set; } = null!;
         public int RoleId { get; set; }
         public virtual Role Role { get; set; } = null!;
-        public virtual ICollection<Ticket> Tickets { get; set; } = [];
+        public virtual ICollection<Ticket>? Tickets { get; set; }
     }
 }

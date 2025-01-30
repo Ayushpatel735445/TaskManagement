@@ -1,6 +1,4 @@
-﻿
-
-namespace TaskManagement.Infrastructure.EntityConfigs
+﻿namespace TaskManagement.Infrastructure.EntityConfigs
 {
     internal class UserConfig : IEntityTypeConfiguration<User>
     {
@@ -28,7 +26,6 @@ namespace TaskManagement.Infrastructure.EntityConfigs
                 .WithMany(r => r.Users) 
                 .HasForeignKey(x => x.RoleId)
                 .OnDelete(DeleteBehavior.Restrict);
-
 
         }
     }

@@ -31,7 +31,14 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\TaskManagement.Core\\TaskManagement.Core.csproj": {
+                "projectPath": "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\TaskManagement.Core\\TaskManagement.Core.csproj"
+              },
+              "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\TaskManagement.Infrastructure\\TaskManagement.Infrastructure.csproj": {
+                "projectPath": "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\TaskManagement.Infrastructure\\TaskManagement.Infrastructure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -51,7 +58,7 @@
           "dependencies": {
             "Microsoft.Extensions.Logging.Abstractions": {
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[9.0.1, )"
             }
           },
           "imports": [
@@ -101,7 +108,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\EmployeeTaskManagement.Core\\EmployeeTaskManagement.Core.csproj": {
+                "projectPath": "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\EmployeeTaskManagement.Core\\EmployeeTaskManagement.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -204,7 +215,15 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.12, )"
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[5.3.15, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -326,9 +345,6 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\EmployeeTaskManagement.Core\\EmployeeTaskManagement.Core.csproj": {
-                "projectPath": "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\EmployeeTaskManagement.Core\\EmployeeTaskManagement.Core.csproj"
-              },
               "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\TaskManagement.Core\\TaskManagement.Core.csproj": {
                 "projectPath": "C:\\TaskManagement\\TaskManagement\\EmployeeTaskManagement\\TaskManagement.Core\\TaskManagement.Core.csproj"
               }
@@ -351,6 +367,10 @@
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[9.0.1, )"
             },
