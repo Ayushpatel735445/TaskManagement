@@ -3,6 +3,6 @@
     public interface IAccountManager
     {
         Task InitializeAsync();
-        Task LoginAsync(LoginModel model);
+        Task<string> LoginAsync(LoginModel model);
     }
 }

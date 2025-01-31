@@ -3,3 +3,8 @@ global using EmployeeTaskManagement.Core.Adstractions.IRepositories;
 global using TaskManagement.Core.Adstractions;
 global using TaskManagement.Core.Models;
 global using TaskManagement.Core.Entities;
+global using Microsoft.IdentityModel.Tokens;
+global using Microsoft.VisualBasic;
+global using System.IdentityModel.Tokens.Jwt;
+global using System.Security.Claims;
+global using System.Text;

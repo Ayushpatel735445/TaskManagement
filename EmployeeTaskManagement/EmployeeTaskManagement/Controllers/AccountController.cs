@@ -1,4 +1,3 @@
-
 namespace EmployeeTaskManagement.Controllers
 {
     [ApiController]
@@ -6,7 +5,7 @@ namespace EmployeeTaskManagement.Controllers
     public class AccountController(ILogger<AccountController> logger, IAccountManager accountManager) : ControllerBase
     {
         private readonly IAccountManager _accountManager = accountManager;
-        private readonly ILogger<AccountController> _logger = logger;
+        private readonly ILogger<AccountController> _logger = logger;  // Only keep here for scalablity of project A.P.
 
         [HttpPost("seed-database")]
         public async Task<IActionResult> SeedDatabase()
@@ -20,8 +19,14 @@ namespace EmployeeTaskManagement.Controllers
         [ProducesResponseType(typeof(IEnumerable<string>), StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> LoginAsync([FromBody] LoginModel model)
         {
-            await _accountManager.LoginAsync(model);
-            return Ok();
+            try
+            {
+                return Ok(await _accountManager.LoginAsync(model));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);  // Can apply logger also - A.P
+            }
         }
     }
 }
