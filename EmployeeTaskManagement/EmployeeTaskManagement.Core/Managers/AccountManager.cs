@@ -24,16 +24,16 @@ namespace EmployeeTaskManagement.Core.Managers
 
             if (!user.Password.Equals(model.Password)) throw new Exception("Incorrect password!");
 
-            var roles = new List<string> { "Admin", "Employee" };  // can be keep in constants A.P.
+            var role = user.RoleId.ToString(); // can be keep in constants A.P.
 
-            return GenerateBearerToken(user, roles);
+            return GenerateBearerToken(user, role);
         }
 
-        private string GenerateBearerToken(User user, List<string> roles)
+        private static string GenerateBearerToken(User user, string role)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
              
-            var key = Encoding.ASCII.GetBytes("YourSuperSecretKeyHere"); // Can be globally assign in program then get here - A.P>
+            var key = Encoding.ASCII.GetBytes("qMCdFDQuF23RV1Y-1Gq9L3cF3VmuFwVbam4fMTdAfpo"); // Can be globally assign in program then get here - A.P>
 
             var tokenDescriptor = new SecurityTokenDescriptor
             {
@@ -42,6 +42,7 @@ namespace EmployeeTaskManagement.Core.Managers
                         new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
                         new Claim(ClaimTypes.Name, user.FirstName),
                         new Claim(ClaimTypes.GivenName, $"{user.FirstName} {user.LastName}".Trim()),
+                        new Claim(ClaimTypes.Role, role),
                     ]),
                 Audience = "YourAppUsers",   // Can be globally assign in program then get here - A.P>
                 Issuer = "YourApp",          // Can be globally assign in program then get here - A.P>
@@ -49,11 +50,6 @@ namespace EmployeeTaskManagement.Core.Managers
                 SigningCredentials =
                         new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
-
-            foreach (var role in roles)
-            {
-                tokenDescriptor.Subject.AddClaim(new Claim(ClaimTypes.Role, role));
-            }
 
             var token = tokenHandler.CreateToken(tokenDescriptor);
 

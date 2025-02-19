@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Authorization;
+
 namespace EmployeeTaskManagement.Controllers
 {
     [ApiController]
@@ -10,14 +12,22 @@ namespace EmployeeTaskManagement.Controllers
         [HttpPost("seed-database")]
         public async Task<IActionResult> SeedDatabase()
         {
-            await _accountManager.InitializeAsync();
-            return Ok();
+            try
+            {
+                await _accountManager.InitializeAsync();
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);  // Can apply logger also - A.P
+            }
         }
 
         [HttpPost("login")]
+        [AllowAnonymous]
         [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(IEnumerable<string>), StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> LoginAsync([FromBody] LoginModel model)
+        public async Task<IActionResult> LoginAsync(LoginModel model)
         {
             try
             {
@@ -28,5 +38,6 @@ namespace EmployeeTaskManagement.Controllers
                 return BadRequest(ex.Message);  // Can apply logger also - A.P
             }
         }
+
     }
 }

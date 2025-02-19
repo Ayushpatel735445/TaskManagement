@@ -10,6 +10,18 @@ builder.Services.AddCors(options =>
                .AllowAnyHeader());
 });
 
+//builder.Services.AddCors(options =>
+//{
+//    options.AddPolicy("AllowAllOrigins", policy =>
+//    {
+//        policy.WithOrigins("http://localhost:8080") // Allow Vue app
+//              .AllowAnyHeader()
+//              .AllowAnyMethod()
+//              .AllowCredentials(); // If sending cookies or authorization headers
+//    });
+//});
+
+
 builder.Services.AddControllers();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -53,6 +65,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
     app.MigrateDatabase();
+    app.UseCors("AllowAllOrigins");
 }
 
 app.UseHttpsRedirection();

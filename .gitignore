@@ -1,39 +1,75 @@
-Specify filepatterns you want git to ignore.
-
-Example:
-#Ignore thumbnails created by Windows
+# **General Files**
+.DS_Store
 Thumbs.db
-#Ignore files built by Visual Studio
-*.obj
-*.exe
-*.pdb
-*.user
-*.aps
-*.pch
-*.vspscc
-*_i.c
-*_p.c
-*.ncb
-*.suo
-*.tlb
-*.tlh
-*.bak
-*.cache
-*.ilk
-*.log
-[Bb]in
-[Dd]ebug*/
-*.lib
-*.sbr
-obj/
-[Rr]elease*/
-_ReSharper*/
-[Tt]est[Rr]esult*
+
+# **Visual Studio & .NET Core Build Files**
 .vs/
-.idea/
-#Nuget packages folder
-packages/
-*.dll
-*AssemblyInfo.cs
+*.user
+*.suo
 *.cache
-*.bin
+*.pdb
+*.dbmdl
+*.log
+*.obj/
+*.bin/
+*.dll
+*.exe
+*.app/
+*.zip
+*.tar.gz
+*.nupkg
+*.snupkg
+*.out/
+project.lock.json
+project.assets.json
+artifacts/
+debug/
+release/
+
+# **ASP.NET & Entity Framework**
+appsettings*.json
+secrets.json
+Migrations/
+
+# **Node.js & Vue.js**
+node_modules/
+dist/
+npm-debug.log*
+yarn-error.log
+package-lock.json
+pnpm-lock.yaml
+*.env
+*.env.local
+*.env.*.local
+
+# **Vue.js Specific Files**
+*.vuepress/
+.vuepress/cache/
+.vuepress/dist/
+*.idea/
+*.vscode/
+.eslintcache
+.npmrc
+npm-debug.log
+*.map
+
+# **Log Files**
+logs/
+*.log
+logs/*.log
+*.trace
+
+# **Generated Files**
+coverage/
+*.coverage
+*.cov
+*.min.js
+*.min.css
+*.swp
+
+# **Git Ignore for Docker**
+/docker-compose.override.yml
+/.dockerignore
+
+# **Compiled TypeScript**
+*.tsbuildinfo

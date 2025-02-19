@@ -1,27 +1,27 @@
 import axios from 'axios';
 import { constants } from '@/config/constants';
-import commit from 'vuex';
-
+ 
 
 const state = {
-  token: null,
-  role: null,
+  token: localStorage.getItem('token') || null,
+  tokenExpired: constants.IsSessionExpired(),
+  roleId: constants.getRoleFromToken(),
 };
 
 const getters = {
   isAuthenticated: (state) => !!state.token,
-  userRole: (state) => state.role,
+  isTokenExpired: (state) => !!state.tokenExpired,
+  role: (state) => state.roleId,
 };
 
 const actions = {
-  async login( credentials) {
-    console.log("credentials", credentials);
+  async login({ commit }, credentials) {
     try {
-      const response = await axios.post(constants.baseApi + 'Account/login', credentials);
-      const { token, role } = response.data;
-      commit('setAuthData', { token, role });
+      const response = await axios.post(`${constants.baseApi}Account/login`, credentials);
+      var token = response.data;
+      commit('setAuthData', { token });
     } catch (error) {
-      throw new Error(error.response.data.message);
+      throw new Error(error); 
     }
   },
   logout({ commit }) {
@@ -30,22 +30,18 @@ const actions = {
 };
 
 const mutations = {
-  setAuthData(state, { token, role }) {
+  setAuthData(state, { token}) {
     state.token = token;
-    state.role = role;
     localStorage.setItem('token', token);
-    localStorage.setItem('role', role);
   },
   clearAuthData(state) {
     state.token = null;
-    state.role = null;
     localStorage.removeItem('token');
-    localStorage.removeItem('role');
   },
 };
 
 export default {
-  namespaced: true,  // Important to enable namespacing
+  namespaced: true,
   state,
   getters,
   actions,
